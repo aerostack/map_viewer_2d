@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<package>
+  <name>map_viewer_2d</name>
+  <version>1.0.0</version>
+  <description>
+    This package provides map viewer capability.
+  </description>
+
+  <author email="jp.bradley@alumnos.upm.es">John Bradley</author>
+  <maintainer email="jp.bradley@alumnos.upm.es">John Bradley</maintainer>
+
+  <license>BSD-3</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>roscpp</build_depend>
+  <build_depend>angles</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>yaml-cpp</build_depend>
+  <build_depend>droneMsgsROS</build_depend>
+  <build_depend>aerostack_msgs</build_depend>
+  <build_depend>lib_pugixml</build_depend>
+  <build_depend>libqt4-dev</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>angles</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>yaml-cpp</run_depend>
+  <run_depend>droneMsgsROS</run_depend>
+  <run_depend>aerostack_msgs</run_depend>
+  <run_depend>lib_pugixml</run_depend>
+  <run_depend>libqt4-dev</run_depend>
+  <run_depend>nav_msgs</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+
+  <export>
+  </export>
+
+</package>

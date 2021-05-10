@@ -1,0 +1,55 @@
+<!-- Launches: graphical_user_interface;-->
+<launch>
+    <!-- master tag is only obeyed in the top-level file (not in includes) 
+    <master>
+    </master>-->
+        <arg name="robot_namespace" default="drone1" />
+        <arg name="my_stack_directory" default="$(env AEROSTACK_STACK)" />
+    	<arg name="robot_config_path" default="$(env AEROSTACK_STACK)/configs/drone1" />
+        <arg name="prefixed_layout" default="center" />
+
+        <!-- odometry_state_receiver -->
+            <arg name="geometry_pose_topic" default="self_localization/pose"/>
+
+        <!-- obstacle receiver -->
+            <arg name="obstacles_topic" default="environment/dynamic_obstacles"/>
+
+        <!-- poses receiver -->
+            <arg name="poses_topic" default="motion_reference/path"/>
+
+        <!-- public_event topic -->
+            <arg name="public_event_topic" default="/public_event"/>
+
+        <!-- drone event topic -->
+            <arg name="event_topic" default="event"/>
+
+        <!--Opened window topic-->
+            <arg name="window_event_topic" default="window_event"/>
+
+    <group ns="$(arg robot_namespace)">
+        <param name="robot_namespace" value="$(arg robot_namespace)" />
+
+        <!-- Ardrone driver node -->
+            <node name="map_viewer_2d_process" pkg="map_viewer_2d" type="map_viewer_2d" output="screen"/>
+            <param name="robot_config_path" value="$(arg robot_config_path)"/>
+
+        <!-- odometry_state_receiver -->
+            <param name="geometry_pose_topic" value="$(arg geometry_pose_topic)"/>
+    
+        <!-- obstacle receiver -->
+            <param name="obstacles_topic" value="$(arg obstacles_topic)"/>
+
+        <!-- poses receiver -->
+            <param name="poses_topic" value="$(arg poses_topic)"/>
+
+        <!-- public_event topic -->
+            <param name="public_event_topic" value="$(arg public_event_topic)"/>
+
+        <!-- drone event topic -->
+            <param name="event_topic" value="$(arg event_topic)"/>
+
+        <!--Window event topic-->
+            <param name="window_event_topic" value="$(arg window_event_topic)" />
+	    
+    </group>
+</launch>

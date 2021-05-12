@@ -35,8 +35,8 @@ set(MAPVIEWER2D_HEADER_FILES
 
 set(CMAKE_AUTOMOC ON)
 
-find_package(catkin REQUIRED COMPONENTS roscpp std_msgs aerostack_msgs geometry_msgs nav_msgs angles lib_pugixml)
-catkin_package(INCLUDE_DIRS ${MAPVIEWER2D_INCLUDE_DIR} CATKIN_DEPENDS roscpp std_msgs geometry_msgs nav_msgs DEPENDS aerostack_msgs angles lib_pugixml)
+find_package(catkin REQUIRED COMPONENTS roscpp std_msgs aerostack_msgs geometry_msgs nav_msgs angles pugixml)
+catkin_package(INCLUDE_DIRS ${MAPVIEWER2D_INCLUDE_DIR} CATKIN_DEPENDS roscpp std_msgs geometry_msgs nav_msgs DEPENDS aerostack_msgs angles pugixml)
 
 include_directories(${MAPVIEWER2D_INCLUDE_DIR})
 include_directories(${MAPVIEWER2D_CONTROLLER_INCLUDE_DIR})

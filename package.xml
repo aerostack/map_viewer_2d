@@ -19,7 +19,7 @@
   <build_depend>yaml-cpp</build_depend>
   <build_depend>droneMsgsROS</build_depend>
   <build_depend>aerostack_msgs</build_depend>
-  <build_depend>lib_pugixml</build_depend>
+  <build_depend>pugixml</build_depend>
   <build_depend>libqt4-dev</build_depend>
   <build_depend>nav_msgs</build_depend>
   <build_depend>geometry_msgs</build_depend>
@@ -30,7 +30,7 @@
   <run_depend>yaml-cpp</run_depend>
   <run_depend>droneMsgsROS</run_depend>
   <run_depend>aerostack_msgs</run_depend>
-  <run_depend>lib_pugixml</run_depend>
+  <run_depend>pugixml</run_depend>
   <run_depend>libqt4-dev</run_depend>
   <run_depend>nav_msgs</run_depend>
   <run_depend>geometry_msgs</run_depend>

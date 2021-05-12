@@ -35,8 +35,7 @@
 #include <ros/ros.h>
 
 #include <iostream>
-#include <pugixml.hpp>
-
+#include <pugixml/pugixml.hpp>
 #include <QObject>
 #include <QMessageBox>
 
